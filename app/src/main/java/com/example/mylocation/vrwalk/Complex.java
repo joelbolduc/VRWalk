@@ -7,6 +7,11 @@ public class Complex {
         this.real=real;
         this.imaginary=imaginary;
     }
+
+    public static double norm(Complex c){
+        return Math.sqrt(c.real*c.real+c.imaginary*c.imaginary);
+    }
+
     public static Complex add(Complex c1, Complex c2){
         return new Complex(c1.real+c2.real,c1.imaginary+c2.imaginary);
     }
